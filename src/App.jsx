@@ -1,13 +1,17 @@
 import { useState } from 'react'
-import Board from './components/Board'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
+import Board from './components/Board'
 
 function App() {
-  
+  const [count, setCount] = useState(0)
+
   return (
-    <>
-      <Board/>
-    </>
+    <div className='app flex flex-col items-center'>
+      <h1 className='title'>Juego Memoria</h1>
+     <Board/>
+    </div>
   )
 }
 
